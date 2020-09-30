@@ -167,7 +167,7 @@ niworkflows_ants_regmask_path : /ants_template/oasis/T_template0_BrainCerebellum
 # Options to be used for AFNI 3dSkullStrip only.
 
 # Output a mask volume instead of a skull-stripped volume. The mask volume containes 0 to 6, which represents voxel's postion. If set to True, C-PAC will use this output to generate anatomical brain mask for further analysis.
-skullstrip_mask_vol: False
+skullstrip_mask_vol: True
 
 
 # Set the threshold value controlling the brain vs non-brain voxels. Default is 0.6.
@@ -179,7 +179,7 @@ skullstrip_var_shrink_fac :  False
 
 
 # The shrink factor bottom limit sets the lower threshold when varying the shrink factor. Default is 0.4, for when edge detection is used (which is On by default), otherwise the default value is 0.65.
-skullstrip_shrink_factor_bot_lim :  0.5
+skullstrip_shrink_factor_bot_lim :  0.65
 
 
 # Avoids ventricles while skullstripping.
